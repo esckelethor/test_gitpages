@@ -18,7 +18,7 @@
 			}
 		}
 
-		xhr.open('POST', './content/test.html', true);
+		xhr.open('GET', './content/test.html', true);
 		xhr.send();
 	}).then(function(data) {
     document.getElementById('change').innerHTML = data;
