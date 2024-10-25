@@ -19,7 +19,7 @@
 			}
 		}
 
-		xhr.open('GET', './php/main.php', true);
+		xhr.open('POST', './php/main.php', true);
 		xhr.send();
 	}).then(function(data) {
     document.getElementById('change').innerHTML = data;
