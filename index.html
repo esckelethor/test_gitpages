@@ -12,8 +12,7 @@
 
 		xhr.onload = function() {
 			if (this.status == 200) {
-				data = JSON.parse(this.responseText);
-				return resolve(data);
+				return resolve(this.responseText);
 			} else {
 				return reject(new Error('XHR.onload Exception (Non 200 Response)... Refer to previous error'));
 			}
