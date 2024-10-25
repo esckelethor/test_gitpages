@@ -1,4 +1,5 @@
-new Promise(function (resolve, reject) {
+let contentPromise = function () {
+	new Promise(function (resolve, reject) {
 		var xhr = new XMLHttpRequest();
 
 		xhr.onerror = function () {
@@ -18,3 +19,6 @@ new Promise(function (resolve, reject) {
 	}).then(function(data) {
     document.getElementById('change').innerHTML = data;
   });
+}
+
+contentPromise();
